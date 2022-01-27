@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "McuCountDown",
-    "slug": "McuCountDown",
+    "name": "MCU Count Down",
+    "slug": "MCU Count Down",
     "version": "1.0.0",
     "orientation": "portrait",
+    "userInterfaceStyle": "dark",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -23,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#003545"
-      }
+      },
+      "permissions" : []
     },
     "web": {
       "favicon": "./assets/favicon.png"

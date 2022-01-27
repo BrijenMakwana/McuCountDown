@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View,Image, SafeAreaView, Platform, Pressable } from 'react-native';
 import React from 'react';
+import moment from 'moment';
 
 export type MovieComponentProps = {
   movieDetails:{
@@ -10,6 +11,7 @@ export type MovieComponentProps = {
     release_date: string;
     overview: string;
   },
+  // function to call the API again with the next date
   onPress: () => void;
 }
 
@@ -19,7 +21,10 @@ const MovieComponent = (props: MovieComponentProps) => {
         {/* movie title */}
       <Text style={styles.title}>{props.movieDetails.title}</Text>
 
-      <Text style={styles.daysLeft}>releases in  <Text style={styles.type}>{props.movieDetails.days_until}</Text>  days!</Text>
+      {/* days until */}
+      <Text style={styles.daysLeft}>
+        releases in  <Text style={styles.type}>{props.movieDetails.days_until}</Text>  days!
+      </Text>
 
       {/* poster image */}
       <Pressable 
@@ -40,8 +45,9 @@ const MovieComponent = (props: MovieComponentProps) => {
 
       {/* show or movie */}
       <Text style={styles.type}>{props.movieDetails.type}</Text>
+
       {/* release date */}
-      <Text style={styles.date}>{props.movieDetails.release_date}</Text>
+      <Text style={styles.date}>{moment(props.movieDetails.release_date).format("Do MMMM YY")}</Text>
 
       {/* overview */}
       <Text style={styles.overview} adjustsFontSizeToFit allowFontScaling>
@@ -77,31 +83,26 @@ const styles = StyleSheet.create({
   poster:{
     width: 250,
     height: 350,
-    // marginTop: 15,
     borderRadius: 20,
     borderColor: "#ED6363",
     borderWidth: 2
   },
   type:{
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "bold",
-    // marginTop: 20,
     color: "#ED6363"
   },
   date:{
     fontSize: 20,
     fontWeight: "bold",
-    // marginTop: 15
     color: "#ED6363",
-    // marginTop: 10
   },
   overview:{
     textAlign: "center",
-    // marginTop: 10,
-    fontSize: 16,
+    fontSize: 17,
     paddingHorizontal: 20,
     color: "#fff",
-    fontWeight: "400",
+    fontWeight: "500",
     width: "100%"
   }
   
