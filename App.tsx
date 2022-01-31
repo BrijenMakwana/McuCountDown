@@ -21,7 +21,7 @@ export default function App() {
 
       setMovieDetails(response.data);
       setNextDate(response.data.release_date)
-
+      
      
    })
    .catch( (error)=> {
