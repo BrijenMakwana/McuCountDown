@@ -7,7 +7,7 @@
 - It will show the number of days that remains until the release.
 - You can press on the poster to go through the entire available list.
 
-Download the app from [Play Store](https://play.google.com/store/apps/details?id=com.brijenmakwana.eggTimer)
+Download the app from [Play Store](https://play.google.com/store/apps/details?id=com.brijenmakwana.MCUCountDown)
 
 <img src="https://github.com/BrijenMakwana/McuCountDown/blob/main/assets/ScrenShot_1.png" width="200" height="350"> <img src="https://github.com/BrijenMakwana/McuCountDown/blob/main/assets/ScrenShot_2.png" width="200" height="350"> <img src="https://github.com/BrijenMakwana/McuCountDown/blob/main/assets/ScrenShot_3.png" width="200" height="350"> <img src="https://github.com/BrijenMakwana/McuCountDown/blob/main/assets/ScrenShot_4.png" width="200" height="350">
 
